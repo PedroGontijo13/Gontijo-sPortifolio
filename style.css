@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  background: #f8f8f8;
+  color: #222;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+i {
+  font-size: 3em;
+}
+
+.content {
+  padding: 40px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.title {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0.5em 0px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+#main-header {
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/1659126973890.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#main-header img {
+  height: auto;
+  width: 15%;
+  border-radius: 50%;
+}
+
+#main-header h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#main-header h3 {
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid #eee;
+  padding: 0.5em 1em;
+  transition: background 2s;
+}
+
+.btn:hover {
+  color: #222;
+  background: #f6f6f6;
+  border: none;
+}
+
+#about .container {
+  padding: 5em 0;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 2fr 2fr;
+}
+
+#about img {
+  width: 80%;
+  height: auto;
+  box-shadow: 2px 5px 5px #888;
+}
+
+progress {
+  width: 100%;
+  background: lightgrey;
+  border-radius: 10px;
+  margin: 0.5em 0;
+}
+
+#experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+}
+
+#experience .card {
+  width: 90%;
+  margin: 20px auto;
+  height: 100%;
+  border: 1px solid grey;
+}
+
+#experience .container {
+  padding-bottom: 5em;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+
+#experience h3 {
+  text-align: center;
+  background: #555;
+  color: #eee;
+}
+
+#experience p {
+  padding: 1em;
+}
+
+#services {
+  padding: 5em 0;
+  background: #eee;
+}
+
+#services .lead {
+  text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  text-align: center;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.services div p:hover {
+  background: #333;
+  color: #eee;
+  border: none;
+}
+
+.services div p {
+  padding: 2em 1em;
+}
+
+.services div h3 {
+  background: #333;
+  color: #f8f8f8;
+}
+
+.services .card {
+  width: 100% !important;
+  border: 1px solid #111;
+}
+
+.services {
+  margin-top: 25px;
+}
+
+#project {
+  padding: 5em 0;
+}
+
+.project {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  justify-items: center;
+  align-items: center;
+}
+
+.project img {
+  width: 100%;
+  height: 190px;
+  vertical-align: middle;
+}
+
+.project a {
+  width: 100%;
+}
+
+.project a:hover img {
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  color: #f8f8f8;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.pexels.com/photos/34225/spider-web-with-water-beads-network-dewdrop.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#contact h1 {
+  color: #f8f8f8;
+  padding-top: 1em;
+}
+
+#contact .lead {
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+  display: grid;
+  padding: 40px 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+#main-footer {
+  background: #222;
+  color: #eee;
+}
+
+.images-area {
+  margin: auto !important;
+  justify-content: center;
+}
+
+/* media queies */
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  .card2 {
+    margin: 40px auto !important;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  #main-header {
+    height: 50vh;
+  }
+  .lead {
+    font-size: 0.9em;
+  }
+  #about .container {
+    grid-template-columns: 1fr;
+    padding: 1em 0;
+  }
+  .title {
+    padding: 0.3em 0;
+  }
+  #project {
+    padding: 3em 0;
+  }
+  .project {
+    grid-template-columns: 1fr;
+  }
+  #about img {
+    display: none;
+  }
+  #experience .container {
+    padding-bottom: 3em;
+    grid-template-columns: 1fr;
+  }
+  #experience .container {
+    padding-bottom: 3em;
+    grid-template-columns: 1fr;
+  }
+  /*services*/
+  .services {
+    grid-template-columns: 1fr;
+  }
+  #services {
+    padding: 2em 0;
+  }
+  #services {
+    margin-top: 25px !important;
+  }
+  /*project*/
+  #project {
+    grid-template-columns: 1fr;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 10px 0px;
+  }
+}
