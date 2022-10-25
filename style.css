@@ -41,8 +41,23 @@ i {
   text-align: center;
 }
 
+.skills {
+  margin: 10px 10px;
+}
+
+.who {
+  padding: 10%;
+}
+
+.img_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 img {
   width: 100%;
+  max-width: 550px;
 }
 
 #main-header {
@@ -266,6 +281,9 @@ progress {
 @media (max-width: 500px) {
   body {
     overflow-x: hidden;
+  }
+  .who {
+    padding: 2%;
   }
   .card2 {
     margin: 40px auto !important;
